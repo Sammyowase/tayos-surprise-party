@@ -1,6 +1,6 @@
-# Birthday Dinner RSVP Application
+# Birthday lunch RSVP Application
 
-A modern, animated web application for collecting RSVPs for a surprise birthday dinner party. The application features a beautiful UI with animations, email notifications, and data storage capabilities.
+A modern, animated web application for collecting RSVPs for a surprise birthday lunch. The application features a beautiful UI with animations, email notifications, and data storage capabilities.
 
 ## Features
 
