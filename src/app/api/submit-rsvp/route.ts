@@ -10,10 +10,10 @@ const EMAIL_ADMIN = process.env.EMAIL_ADMIN || 'organizer@example.com';
 const EVENT_DETAILS = {
   date: process.env.EVENT_DATE || 'Sunday, April 15, 2024',
   time: process.env.EVENT_TIME || '12:00 Noon',
-  venue: process.env.EVENT_VENUE || 'Yellow Chilling Restaurant',
+  venue: process.env.EVENT_VENUE || 'Yellow Chilli Restaurant, VI',
   attireMale: process.env.EVENT_ATTIRE_MALE || 'Native Attire with Cap',
-  attireFemale: process.env.EVENT_ATTIRE_FEMALE || 'Rich Aunty Attire',
-  location: process.env.EVENT_LOCATION || 'Yellow Chilling Restaurant',
+  attireFemale: process.env.EVENT_ATTIRE_FEMALE || 'Rich Aunty Vibe',
+  location: process.env.EVENT_LOCATION || 'Yellow Chilli Restaurant',
   mapLink: process.env.EVENT_MAP_LINK || 'https://maps.google.com/?q=Yellow+Chilling+Restaurant',
 };
 
@@ -216,8 +216,9 @@ async function sendConfirmationEmail(fullName: string, email: string, gender: st
               <p><span class="highlight">Attire:</span> ${attire}</p>
               <p><span class="highlight">Location:</span> <span class="venue">${location}</span></p>
               <br>
+               
+               <p><strong> Kindly Note: This invite admits only <strong>ONE</strong> person.</strong></p>
                <p>We look forward to celebrating together!</p>
-               <p><strong> Kindly Note that this invite admits one</strong></p>
             </div>
            
             
