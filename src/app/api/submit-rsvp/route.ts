@@ -206,7 +206,7 @@ async function sendConfirmationEmail(fullName: string, email: string, gender: st
           </div>
           <div class="content">
             <p>Dear ${fullName},</p>
-            <p>Thank you for confirming your attendance to Tayo's Birthday Lunch! We're excited to have you join us for this special celebration.</p>
+            <p>Thank you for your interest in my husband’s surprise birthday party! Here are the details:</p>
             
             <div class="details">
               <h2>Event Details</h2>
@@ -215,7 +215,11 @@ async function sendConfirmationEmail(fullName: string, email: string, gender: st
               <p><span class="highlight">Venue:</span> ${venue}</p>
               <p><span class="highlight">Attire:</span> ${attire}</p>
               <p><span class="highlight">Location:</span> <span class="venue">${location}</span></p>
+              <br>
+               <p>We look forward to celebrating together!</p>
+               <p><strong> Kindly Note that this invite admits one</strong></p>
             </div>
+           
             
             <p><strong>Important:</strong> This is a <strong>surprise party</strong>, so please keep this information confidential.</p>
             
@@ -267,12 +271,14 @@ async function sendAdminNotification(fullName: string, email: string, gender: st
       subject: 'New Birthday Lunch RSVP Received',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;">
-          <h2 style="color: #333; text-align: center;">New RSVP Received</h2>
+          <h2 style="color: #333; text-align: center;">A New RSVP Received</h2>
           <p><strong>Name:</strong> ${fullName}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Gender:</strong> ${gender}</p>
+           <p><strong>Date of the Event:</strong>${date}</p>
+          <p><strong>Time of the Event:</strong>${time}</p>
           <p><strong>Attire Assigned:</strong> ${attire}</p>
-          <p><strong>Time Submitted:</strong> ${new Date().toLocaleString()}</p>
+          <p><strong>Time form was Submitted:</strong> ${new Date().toLocaleString()}</p>
           <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
           <p style="font-size: 12px; color: #777; text-align: center;">
             This is an automated notification from your Birthday RSVP system.
